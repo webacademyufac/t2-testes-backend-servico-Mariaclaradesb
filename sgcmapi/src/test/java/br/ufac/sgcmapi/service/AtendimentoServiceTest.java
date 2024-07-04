@@ -79,6 +79,7 @@ public class AtendimentoServiceTest {
         List<Atendimento> result = servico.get("Giulia");
         assertNotNull(result);
         assertEquals(2, result.size());
+        assertEquals(2L, result.get(1).getId());
     }
 
     @Test
